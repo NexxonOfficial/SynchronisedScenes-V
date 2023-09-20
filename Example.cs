@@ -2,7 +2,7 @@ internal class Example
 {
   public Example() 
   {
-		// Example #1: Fingerprint Scanner Hack
+    // Example #1: Fingerprint Scanner Hack
     int prop = API.GetHashKey("ch_prop_fingerprint_scanner_01d");
     int propObject = API.CreateObject(prop, 100.0f, 80.0f, 180.0f, true, false, true);
 
@@ -19,7 +19,7 @@ internal class Example
      Debug.WriteLine(phase.ToString());
      if (phase > 0.98f)
      {
-    		SynchronisedScene loopScene = new(propObject, "anim_heist@hs3f@ig1_hack_keypad@male@", "", debugText: true, holdLastFrame: false, looped: true);
+    	SynchronisedScene loopScene = new(propObject, "anim_heist@hs3f@ig1_hack_keypad@male@", "", debugText: true, holdLastFrame: false, looped: true);
 
         loopScene.AddPedToScene(Game.PlayerPed, "hack_loop_var_01");
         loopScene.AddEntityToScene("ch_prop_ch_usb_drive01x", "hack_loop_var_01_ch_prop_ch_usb_drive01x");
@@ -41,9 +41,9 @@ internal class Example
       }
     };
 
-		//Example 2: Container Lock Cut
+    //Example 2: Container Lock Cut
 
-		int prop = API.GetHashKey("tr_prop_tr_container_01a");
+    int prop = API.GetHashKey("tr_prop_tr_container_01a");
     int propObject = API.CreateObject(prop, 100.0f, 80.0f, 180.0f, true, false, true);
 
     SynchronisedScene initScene = new(propObject, "anim@scripted@player@mission@tunf_train_ig1_container_p1@male@", "action_container", debugText: true);
