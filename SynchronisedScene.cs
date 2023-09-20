@@ -1,5 +1,4 @@
-﻿namespace Workshop.Client.Components
-{
+
     internal class SynchronisedScene
     {
         internal Dictionary<string, int> Entities;
@@ -140,4 +139,3 @@
 
         internal event SynchronisedScenePhaseChange OnPhaseChange;
     }
-}
